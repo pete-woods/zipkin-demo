@@ -7,7 +7,7 @@ services:
       SPRING_ZIPKIN_BASEURL: 'http://zipkin:9411'
       SPRING_SLEUTH_SAMPLER_PERCENTAGE: '1.0'
       SPRING_SLEUTH_SAMPLER_PROBABILITY: '1.0'
-      SPRING_ZIPKIN_SERVICE_NAME: 'demoA'
+      SPRING_ZIPKIN_SERVICE_NAME: 'demo-a'
     ports:
       - 8080:8080
 
@@ -17,7 +17,7 @@ services:
       SPRING_ZIPKIN_BASEURL: 'http://zipkin:9411'
       SPRING_SLEUTH_SAMPLER_PERCENTAGE: '1.0'
       SPRING_SLEUTH_SAMPLER_PROBABILITY: '1.0'
-      SPRING_ZIPKIN_SERVICE_NAME: 'demoB'
+      SPRING_ZIPKIN_SERVICE_NAME: 'demo-b'
 
   demo-c:
     image: petewoods/democ
@@ -25,7 +25,7 @@ services:
       SPRING_ZIPKIN_BASEURL: 'http://zipkin:9411'
       SPRING_SLEUTH_SAMPLER_PERCENTAGE: '1.0'
       SPRING_SLEUTH_SAMPLER_PROBABILITY: '1.0'
-      SPRING_ZIPKIN_SERVICE_NAME: 'demoC'
+      SPRING_ZIPKIN_SERVICE_NAME: 'demo-c'
 
   zipkin:
     image: 'openzipkin/zipkin'
